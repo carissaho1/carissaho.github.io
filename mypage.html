@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            background-color: yellow;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .floating-image {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .heart {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: floatUp 5s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -20px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 20px;
+            top: 0;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(-45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-800px) rotate(-45deg);
+                opacity: 0;
+            }
+        }
+
+        .heart.left {
+            left: 20px;
+            bottom: 0;
+            animation-delay: 0s;
+        }
+
+        .heart.right {
+            right: 20px;
+            bottom: 0;
+            animation-delay: 0.2s;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>안녕하세요! Welcome to Justin Bieber Fanpage</h1>
+
+
+<img src="justin1.jpg" class="floating-image" alt="Image 1">
+<img src="justin2.jpg" class="floating-image" alt="Image 2">
+<img src="justin3.jpg" class="floating-image" alt="Image 3">
+<img src="justin4.jpg" class="floating-image" alt="Image 4">
+<img src="justin5.jpg" class="floating-image" alt="Image 5">
+<img src="justin6.jpg" class="floating-image" alt="Image 6">
+
+
+<div class="heart left"></div>
+<div class="heart right"></div>
+
+<script>
+    const images = document.querySelectorAll('.floating-image');
+
+    images.forEach(img => {
+        let x = Math.random() * window.innerWidth;
+        let y = Math.random() * window.innerHeight;
+        let dx = (Math.random() - 0.5) * 4;
+        let dy = (Math.random() - 0.5) * 4;
+
+        function animate() {
+            x += dx;
+            y += dy;
+
+            if (x <= 0 || x >= window.innerWidth - 100) dx *= -1;
+            if (y <= 0 || y >= window.innerHeight - 100) dy *= -1;
+
+            img.style.left = x + 'px';
+            img.style.top = y + 'px';
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    });
+
+    function createHeart(className) {
+        const heart = document.createElement('div');
+        heart.className = `heart ${className}`;
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            document.body.removeChild(heart);
+        }, 5000);
+    }
+
+    setInterval(() => createHeart('left'), 1000);
+    setInterval(() => createHeart('right'), 1000);
+
+</script>
+
+</body>
+</html>
+
