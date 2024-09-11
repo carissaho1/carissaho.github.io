@@ -1,0 +1,38 @@
+/* universal selector */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#box1 {
+    background-color: red;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#box2 {
+    background-color: yellow;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#box3 {
+    background-color: green;
+}
+
+/* .parent {
+    display: flex;
+} */
+
+/*On screens that are 600px or less (small tablet), we will make the child boxes stack on top of each other instead of next to each other. */
+
+@media screen and (max-width: 600px){
+    .parent {
+        display: block;
+    }
+
+    .child {
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,51 @@
+.redbox {
+    background-color: #FFC8C8
+}
+
+.greenbox {
+    background-color: #BEFEEB;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.first {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    width: 30%; /* added from soln */
+}
+
+.rest {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    width: 10%;
+}
+
+.cellbold {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

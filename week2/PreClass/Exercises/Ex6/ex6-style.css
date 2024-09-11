@@ -1,0 +1,25 @@
+h2 {
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /*added from soln*/
+}
+
+li {
+    display: inline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li a {
+    display: inline-block; /*added from soln*/
+    padding: 14px 16px; /*added from soln*/
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
