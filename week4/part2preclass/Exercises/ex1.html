@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    
+    <h2>Form Validation</h2>
+
+    <form name="form" action="." onsubmit="validateForm('form')" autocomplete="on" >
+            ID: <input type="text" name="id" ><br>
+            Age: <input type="number" name="age" ><br>
+            Email: <input type="text" name="email" ><br>
+            Password: <input type="password" name="password" ><br>
+            <input type="submit" value="Submit"><br>
+        </form>
+
+        <script>
+        
+            function validateForm(fname) {
+                var form1 = document.forms[fname];
+
+                var [id, email, age, password] = [ form1["id"].value,
+                form1["email"].value, form1["age"].value, form1["password"].value];
+
+                msg = "";
+                if (id.length>10){
+                    msg += "ID must not contain more than 10 characters \n";
+                }
+
+                if (age<10 || age>40) {
+                    msg += "Exceeded allowed age\n";
+                }
+
+                if (email.indexOf("@") == -1){
+                    msg += "Email must contain '@'\n";
+                }
+
+                if (password.length==0){
+                    msg += "Password must not be empty\n";
+                }
+
+                // from soln:
+                if (msg != "") {
+                    alert(msg);
+                    return false;
+                } else {
+                    return true;
+                }
+
+            }
+     
+         </script>
+</body>
+</html>

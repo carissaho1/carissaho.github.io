@@ -9,44 +9,145 @@
         Go to Bootstrap 4 website: https://getbootstrap.com/
         And go to Get Started
         Get "Starter template" code!
+
     -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        a {
+            display: inline; 
+            align-items: center; 
+            justify-content: center; 
+            width: 40px; height: 40px; 
+            padding-top: 10px;
+            color: blue; border: 2px solid blue; border-radius: 50%; 
+            text-decoration: none;
+        }
+
+    </style>
+
     
 </head>
 <body>
 
-    <img src="images/henry.jpg" style="width: 20%">
-    Joe Fox
-    <p>I am open to new opportunities. I am available January 2021 onwards.</p>
-    Social media icons (facebook, twitter, instagram, linkedin)
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-md-4 bg-light p-0" style="height:40%;">
+                <div class="text-secondary text-center">
+                    <img src="images/henry.jpg" class="img-fluid" style="width: 100%; height: auto;padding: 0; margin: 0;">
+                    <h1 class="pt-3">Joe Fox</h1>
+                    <p>I am open to new opportunities. I am available January 2021 onwards.</p>
+                    <h6 class="text-right">  
+                        <a href="http://www.google.com.sg" class="fa fa-facebook-official"></a>                        
+                        <a href="http://www.google.com" class="fa fa-twitter mx-1"></a>
+                        <a href="#" class="fa fa-instagram mx-1"></a>
+                        <a href="#" class="fa fa-linkedin-square mx-1"></a>
+                      <h6>    
+                </div>
+            </div>
+            
+            <div class="col mx-3">
+                <div class="text-secondary">
+                    <h1>Joe Fox</h1>
+                    <p class="no-margin-bottom">Nulla efficitur facilisis mollis. Aliquam ullamcorper mi felis, a semper turpis laoreet in. Nulla pharetra nisl at purus pellentesque ultricies. Sed a augue condimentum, condimentum ex a, bibendum enim. Proin eget massa a velit congue interdum. Suspendisse a egestas nunc. In eu dignissim nulla, ut semper urna. Nulla ullamcorper sed est quis placerat. Aenean id sagittis lectus, consequat ultrices justo. Fusce venenatis lacinia ligula in scelerisque. Proin tincidunt diam at turpis condimentum interdum ac id magna. Sed malesuada nunc ut leo iaculis, vitae consectetur nulla consectetur. Curabitur gravida sapien sagittis congue mattis. Aenean hendrerit rhoncus magna in hendrerit.</p>
+                </div>
 
-                    
+                
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th scope="col" class="text-danger"><i class="fa fa-graduation-cap mr-2" style="font-size:15px"></i> Degree:</th>
+                        <td>Master's Degrees</td>
+                    </tr>
+                    <tr>
+                        <th scope="col" class="text-warning"><i class="fa fa-diamond mr-2" style="font-size:15px"></i> Exp:</th>
+                        <td>10 Year in Technology</td>
+                    </tr>
+                    <tr>
+                        <th scope="col" class="text-danger"><i class="fa fa-file-o mr-2" style="font-size:15px"></i> Courses:</th>
+                        <td>Software, Hardware, Mathematics</td>
+                    </tr>
+                    <tr>
+                        <th scope="col" class="text-success"><i class="fa fa-map-marker mr-2" style="font-size:15px"></i> Address:</th>
+                        <td>789 Sunshine Lane, St. Paul, Minnesota, USA</td>
+                    </tr>
+                    <tr>
+                        <th scope="col" class="text-secondary"><i class="fa fa-mobile mr-2" style="font-size:15px"></i> Phone:</th>
+                        <td>+1 612 555 1234</td>
+                    </tr>
+                    <tr>
+                        <th scope="col" class="text-danger"><i class="fa fa-envelope mr-2" style="font-size:15px"></i> Email:</th>
+                        <td>joe.fox@example.com</td>
+                    </tr>
 
-    Joe Fox</h4>
-    <p class="no-margin-bottom">Nulla efficitur facilisis mollis. Aliquam ullamcorper mi felis, a semper turpis laoreet in. Nulla pharetra nisl at purus pellentesque ultricies. Sed a augue condimentum, condimentum ex a, bibendum enim. Proin eget massa a velit congue interdum. Suspendisse a egestas nunc. In eu dignissim nulla, ut semper urna. Nulla ullamcorper sed est quis placerat. Aenean id sagittis lectus, consequat ultrices justo. Fusce venenatis lacinia ligula in scelerisque. Proin tincidunt diam at turpis condimentum interdum ac id magna. Sed malesuada nunc ut leo iaculis, vitae consectetur nulla consectetur. Curabitur gravida sapien sagittis congue mattis. Aenean hendrerit rhoncus magna in hendrerit.</p>
-                    
-    Degree Master's Degrees
+                    </tbody>
+                </table>
+
+                <div class="row mt-2">
+                    <div class="col font-weight-bold">
+                          <h5> Professional Skills <h5>
+                    </div>
+                </div>
+      
+                <div class="row">
+                    <div class="col-6 mt-2">
+                        <label> Positive Behaviors </label>
+                    </div>
+                    <div class="col-6 mt-2 d-flex justify-content-end">
+                        <label>40% </label>
+                    </div>
+                </div>
+      
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 40%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
     
-    Exp.: 10 Year in Technology
+                <div class="row">
+                    <div class="col-6 mt-3">
+                        <label> Teamworking Abilities </label>
+                    </div>
+                    <div class="col-6 mt-3 d-flex justify-content-end">
+                        <label>50% </label>
+                    </div>
+                </div>
     
-    Courses: Software, Hardware, Mathematics
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
     
-    Address: 789 Sunshine Lane, St. Paul, Minnesota, USA</p>
+                <div class="row">
+                    <div class="col-6 mt-3">
+                        <label> Time Management </label>
+                    </div>
+                    <div class="col-6 mt-3 d-flex justify-content-end">
+                        <label>60%</label>
+                    </div>
+                </div>
+        
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-6 mt-3">
+                        <label>Excellent Communication</label>
+                    </div>
+                    <div class="col-6 mt-3 d-flex justify-content-end">
+                        <label>80%</label>
+                    </div>
+                </div>
+        
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     
-    Phone: +1 612 555 1234
-    
-    Email: joe.fox@example.com
-    
-    
-    Professional Skills
-    
-    
-    Positive Behaviors 40%
-    
-    Teamworking Abilities 50%
-    
-    Time Management 60%
-    
-    Excellent Communication 80%
+
 
     
 	

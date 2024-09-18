@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome</title>
+</head>
+<body>
+
+	<script>
+		var str = prompt("If you provide a string, I will tell you if it is a Palindrome!"); 
+       // TODO: add your code here
+	   str = str.toLowerCase(); 
+	   str = str.replace(/ /g, "");
+	   var reversed = str.split("").reverse().join("");
+	   if (str == reversed){
+		alert("Yes, palindrome!");
+	   }
+	   else {
+		alert("No, not palindrome!");
+	   }
+
+	// function negate (f) {
+	// 	return function(i) {
+	// 		return !f(i);
+	// 	}
+	// }
+	// var isNumber = negate(isNaN);
+	// alert(isNumber(NaN));
+
+	// const showMessage = function() {console.log("This msg is shown after 3sec")};
+	// setTimeout(showMessage, 3000);
+
+	</script>
+</body>
+</html>

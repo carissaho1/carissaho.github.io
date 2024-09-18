@@ -1,51 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Challenge 4 - Joe Profile</title>
 
-    <!-- How do we refer to Bootstrap CDN? 
+<head>
+  <meta charset="utf-8">
+  <title>Challenge 4 - Joe Profile</title>
+
+  <!-- How do we refer to Bootstrap CDN? 
         Go to Bootstrap 4 website: https://getbootstrap.com/
         And go to Get Started
         Get "Starter template" code!
     -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!--the below link is for DISPLAYING SOCIAL MEDIA ICONS!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
+
 <body>
 
-  <img src="images/henry.jpg" style="width: 20%">
-  Joe Fox
+  <div class="container">
+    <div class="row">
 
-  Follow on: (facebook, twitter, instagram, linkedin)
+      <div class="col-md-6">
 
+        <div class="row">
+          <img src="images/henry.jpg" style="width: 20%">
+        </div>
+        <div class="row">
+          <div class="col">
+            Joe Fox
+          </div>
+          <div class="col">
+            <h6 class="text-right" style="color:grey">Follow on:  
 
-  <br>
+              <a href="http://www.google.com.sg" class="fa fa-facebook-official mx-1" style="font-size:24px;color:grey"></a>
+              <a href="http://www.google.com" class="fa fa-twitter mx-1" style="font-size:24px;color:grey"></a>
+              <a href="#" class="fa fa-instagram mx-1" style="font-size:24px;color:grey"></a>
+              <a href="#" class="fa fa-linkedin-square mx-1" style="font-size:24px;color:grey"></a>
 
-  Profession: Programmer
-  Experience: 10 Years
-  Phone: +1 612 555 1234
-  Email: joe.fox@example.com
-  Location: 789 Sunshine Lane, St. Paul, Minnesota, USA</label>
-          
-  <br>
-  Biography of Joe Fox
-  <p>Nulla efficitur facilisis mollis. Aliquam ullamcorper mi felis, a semper turpis laoreet in. Nulla pharetra nisl at purus pellentesque ultricies. Sed a augue condimentum, condimentum ex a, bibendum enim. Proin eget massa a velit congue interdum. Suspendisse a egestas nunc. In eu dignissim nulla, ut semper urna. Nulla ullamcorper sed est quis placerat. Aenean id sagittis lectus, consequat ultrices justo. Fusce venenatis lacinia ligula in scelerisque. Proin tincidunt diam at turpis condimentum interdum ac id magna. Sed malesuada nunc ut leo iaculis, vitae consectetur nulla consectetur. Curabitur gravida sapien sagittis congue mattis. Aenean hendrerit rhoncus magna in hendrerit.</p>
+              <!--                    
+              <i class="fa fa-facebook mx-1" style="font-size:24px;color:grey"></i>
+              <i class="fa fa-twitter mx-1" style="font-size:24px;color:grey"></i>
+              <i class="fa fa-instagram mx-1" style="font-size:24px;color:grey"></i>
+              <i class="fa fa-linkedin-square mx-1" style="font-size:24px;color:grey"></i>
+              -->
+
+            <h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+              <span class="font-weight-bold">Profession:</span>
+          </div>
+          <div class="col">
+              <span>Programmer</span>
+          </div>
+        </div>
         
-
-  <br>
-  Personal Experience
-  <p>It is truly amazing the damage that we, as parents, can inflict on our children. So why do we do it? For the most part, we don’t do it intentionally or with malice. In the majority of cases, the cause is a well-meaning but unskilled or un-thinking parent, who says the wrong thing at the wrong time, and the message sticks – as simple as that!</p>
+        <div class="row">
+            <div class="col-3">
+                <span class="font-weight-bold">Experience:</span>
+            </div>
+            <div class="col">
+                <span>10 Years</span>
+            </div>
+        </div>
         
-  <br>
-  Skill
-  Look 99%
-  Education 70%
-  CSS 50%
-  JavaScript 77%
+        <div class="row">
+            <div class="col-3">
+                <span class="font-weight-bold">Phone:</span>
+            </div>
+            <div class="col">
+                <span>+1 612 555 1234</span>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-3">
+                <span class="font-weight-bold">Email:</span>
+            </div>
+            <div class="col">
+                <span>joe.fox@example.com</span>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-3">
+                <span class="font-weight-bold">Location:</span>
+            </div>
+            <div class="col">
+                <span>789 Sunshine Lane, St. Paul, Minnesota, USA</span>
+            </div>
+        </div>
+      
+
+      </div>
+
+      <div class="col-md-6">
+        <h4>Biography of Joe Fox</h4>
+        <p>Nulla efficitur facilisis mollis. Aliquam ullamcorper mi felis, a semper turpis laoreet in. Nulla pharetra nisl at
+          purus pellentesque ultricies. Sed a augue condimentum, condimentum ex a, bibendum enim. Proin eget massa a velit
+          congue interdum. Suspendisse a egestas nunc. In eu dignissim nulla, ut semper urna. Nulla ullamcorper sed est quis
+          placerat. Aenean id sagittis lectus, consequat ultrices justo. Fusce venenatis lacinia ligula in scelerisque. Proin
+          tincidunt diam at turpis condimentum interdum ac id magna. Sed malesuada nunc ut leo iaculis, vitae consectetur
+          nulla consectetur. Curabitur gravida sapien sagittis congue mattis. Aenean hendrerit rhoncus magna in hendrerit.</p>
+        <h4>Personal Experience</h4>
+        <p>It is truly amazing the damage that we, as parents, can inflict on our children. So why do we do it? For the most
+          part, we don’t do it intentionally or with malice. In the majority of cases, the cause is a well-meaning but
+          unskilled or un-thinking parent, who says the wrong thing at the wrong time, and the message sticks – as simple as
+          that!</p>
+
+        <h4>Skill</h4>
+
+        <div class="row mb-1">
+          <div class="col-6">
+              <label>Look </label>
+          </div>
+          <div class="col-6 text-right">
+            <label>99% </label>
+          </div>
+        </div>
+
+        <div class="progress mb-3" style="height: 5px;"> <!--change bar height-->
+          <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>        
+
+        <div class="row mb-1">
+          <div class="col-6">
+              <label>Education </label>
+          </div>
+          <div class="col-6 text-right">
+            <label>70% </label>
+          </div>
+        </div>
+
+        <div class="progress mb-3" style="height: 5px;"> <!--change bar height-->
+          <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>            
+        
+        <div class="row mb-1">
+          <div class="col-6">
+              <label>CSS </label>
+          </div>
+          <div class="col-6 text-right">
+            <label>50% </label>
+          </div>
+        </div>
+
+        <div class="progress mb-3" style="height: 5px;">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>     
+
+        <div class="row mb-1">
+          <div class="col-6">
+              <label>Javascript </label>
+          </div>
+          <div class="col-6 text-right">
+            <label>77% </label>
+          </div>
+        </div>
+
+        <div class="progress mb-3" style="height: 5px;">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>  
+               
 
 
+      </div>
 
+    </div>
+  </div>
 
-</script>
+  </script>
 </body>
+
 </html>

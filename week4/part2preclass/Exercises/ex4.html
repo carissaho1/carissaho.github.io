@@ -1,0 +1,61 @@
+<html>
+   <head>
+      <title>Event Handling</title>
+   </head>
+   <body>
+     
+      <h1>Shopping List</h1>
+      <p>Get it done today</p>
+      
+        <!-- add HTML code here -->
+
+      <input type="text" id="text" placeholder="enter items"></input>
+      <button id="Enter" onclick="addtolist()">enter</button>
+      
+
+      <ul id="list">
+         <li>Notebook <button onclick="remove(this.parentNode)">delete</button></li>
+         <li>Jello <button onclick="remove(this.parentNode)">delete</button></li>
+         <li>Spinach <button onclick="remove(this.parentNode)">delete</button></li>
+         <li>Rice <button onclick="remove(this.parentNode)">delete</button></li>
+         <li>Birthday Cake <button onclick="remove(this.parentNode)">delete</button></li>
+         <li>Candles <button onclick="removeUl(this.parentNode)">delete</button></li>
+      </ul>
+      
+      <script>
+      
+        // add code here
+
+         function remove(object){
+            object.remove();
+
+         }
+
+         function addtolist(){
+            var input = document.getElementById("text"); //soln: must check if document.getElementById("text").value.length > 0) then do the appending by executing the code below
+            if (input.value.length > 0){
+               createItem(input);
+            }
+         }  
+
+         function createItem(input) {
+            var ul = document.getElementsByTagName("ul")[0];
+            var li = document.createElement("li");
+            li.innerHTML = input.value  + ' <button onclick="remove(this.parentNode)">delete</button>';
+            ul.appendChild(li);
+         }
+
+   function removeUl(button) { //if i wanted to remove the whole list by clicking one button
+      // Find the closest <ul> ancestor of the button
+      const ul = button.closest('ul');
+      if (ul) {
+         ul.remove(); // Removes the entire <ul> element from the DOM
+      }
+   }
+
+      
+
+      </script>
+ 
+   </body>
+</html>
